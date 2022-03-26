@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_32.png"/>
+    <link rel="icon" type="image/png" sizes="196x196" href="../assets/img/favicon_196.png"/>
+    <meta name="theme-color" content="#ffffff">
+    <title>프랭클리 | 로그인</title>
+    <link rel="stylesheet" href="../../css/resets.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+<div class="wrap">
+    <!--헤더-->
+    <header class="header header--back">
+        <a class="icon-button-56 header__back-button" href="#">
+            <img src="/assets/icon/Arrow_left48.svg" alt="뒤로가기">
+        </a>
+    </header>
+
+    <div class="sign-up-title">
+        <h3>로그인</h3>
+    </div>
+
+    <form class="sign-up-form">
+<!--        이메일-->
+        <label>
+            <p class="sign-up-form__input-info">이메일</p>
+            <input class="sign-up-form__text-input" type="email" placeholder="example@gmail.com">
+            <p class="sign-up-form__error-message">올바른 이메일 형식을 입력해주세요.</p>
+        </label>
+
+<!--        비밀번호-->
+        <label>
+            <p class="sign-up-form__input-info">비밀번호</p>
+            <input class="sign-up-form__text-input" type="email" placeholder="대소문자, 숫자, 특수문자 포함 8~16자리" maxlength="16">
+            <p class="sign-up-form__error-message">대소문자, 숫자, 특수문자 포함 8~16자리</p>
+        </label>
+
+<!--        이메일 저장, 비밀번호 찾기-->
+        <div class="log-in__check">
+            <div class="remember-email">
+                <input type="checkbox" id="remember-email" class="input-checkbox">
+                <label for="remember-email"></label>
+                이메일 저장
+            </div>
+            <a href="#">비밀번호 찾기</a>
+        </div>
+
+
+        <button class="sign-up-form__button" onclick="location.href='/index.html'">로그인</button>
+    </form>
+</div>
+</body>
+</html>
